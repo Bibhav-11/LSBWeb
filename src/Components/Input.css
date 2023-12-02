@@ -1,0 +1,15 @@
+.input {
+    background-color: #E41F1F;
+    padding: 15px 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: block;
+}
+
+.input::placeholder {
+    color: white;
+}
+
+/* style={{, borderWidth: 0, width: 150, padding: '5px' }} */
