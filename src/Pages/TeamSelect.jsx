@@ -37,7 +37,7 @@ const {team1, team2, team1Num, team2Num} = state;
         </div>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%', marginTop: "115px", padding: 16 }}>
+      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%', marginTop: "115px", padding: "16px" }}>
         <div style={{display: 'flex', flexDirection: 'column', gap: '10px'}}>
           {selectedTeamMembers1.map((value, index) => (
            <InputSecond index={index} text="Enter player Name" value={value} selectedValue={handleSelectTeam1Member} />
