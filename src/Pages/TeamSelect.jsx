@@ -25,7 +25,7 @@ const {team1, team2, team1Num, team2Num} = state;
   };
 
   return (
-    <div style={{ height: '100vh' ,display: 'flex', justifyContent: 'center', alignItems: "center", position: 'relative'}}>
+    <div style={{ minHeight: '100vh' ,display: 'flex', justifyContent: 'center', alignItems: "center", position: 'relative'}}>
       <h1 style={{ position: 'absolute', top: 0, fontSize: '2.5rem', marginBottom: 20  }}>Team Select Phase</h1>
 
       <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%', position: 'absolute', top: 0 }}>
