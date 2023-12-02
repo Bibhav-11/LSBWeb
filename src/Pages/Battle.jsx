@@ -222,7 +222,7 @@ function stopRecording() {
         </div>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%', alignItems: 'center' }}>
+      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginTop: "50px" }}>
         <div style={styles.membersContainer}>
           {team1.members.map((member, index) => (
             <div
