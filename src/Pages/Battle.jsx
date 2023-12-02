@@ -337,7 +337,7 @@ function stopRecording() {
             Start
           </button>
   
-          <button>
+          <button onClick={handleStopRecording}>
             Stop
           </button>
   
