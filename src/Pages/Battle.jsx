@@ -212,6 +212,7 @@ function stopRecording() {
 
   return (
     <div style={styles.container}>
+        <div>
 
     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%', position: 'absolute', top: 0 }}>
         <div style={{ width: '350px', padding: '10px', backgroundColor: '#E41F1F', marginBottom: 8 }}>
@@ -229,7 +230,7 @@ function stopRecording() {
               key={index}
               style={{
                 padding: '20px 20px',
-                width: "250px",
+                width: "150px",
                 border: '1px solid #E41F1F',
                 color: '#E41F1F',
                 borderRadius: 5,
@@ -290,7 +291,7 @@ function stopRecording() {
               key={index}
               style={{
                 padding: '20px 20px',
-                width: "250px",
+                width: "150px",
                 cursor: 'pointer',
                 textAlign: 'center',
                 border: '1px solid #E41F1F',
@@ -322,31 +323,29 @@ function stopRecording() {
         </div>
       </div>
 
-      <div style={{position: 'absolute', bottom: 10, left: "50%", transform: "translateX(-50%)"}}>
-        <button
-          style={{
-            ...styles.startButton,
-            ...(currentMember ? {} : styles.disabledButton),
-          }}
-          onClick={handleStartRecording}
-          disabled={!currentMember}
-        >
-          Start
-        </button>
 
-        <button
-          style={{ ...styles.stopButton, ...(isRecording ? {} : styles.disabledButton) }}
-          onClick={handleStopRecording}
-        //   disabled={!isRecording}
-        >
-          Stop
-        </button>
-
-        <button style={styles.stopButton} onClick={() => history.push('/FakeWinner', handleTeamWinner())}>
-          Finish
-        </button>
-      </div>
-    </div>
+    </div >
+          <div style={{display: 'flex', justifyContent: 'center', marginTop: '30px'}}>
+          <button
+            style={{
+              ...styles.startButton,
+              ...(currentMember ? {} : styles.disabledButton),
+            }}
+            onClick={handleStartRecording}
+            disabled={!currentMember}
+          >
+            Start
+          </button>
+  
+          <button>
+            Stop
+          </button>
+  
+          <button style={styles.stopButton} onClick={() => history.push('/FakeWinner', handleTeamWinner())}>
+            Finish
+          </button>
+        </div>
+        </div>
   );
 };
 
